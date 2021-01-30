@@ -157,7 +157,6 @@ div#action-nudge-items {
   padding: 20px;
   z-index: 5;
   position: relative;
-  top: 100px;
   animation: fadeIn ease-in 4s;
   -webkit-animation: fadeIn ease-in 4s;
 }
