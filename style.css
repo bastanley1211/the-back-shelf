@@ -340,14 +340,12 @@ input[type="checkbox"] {
   transition: all 0.3s;
   box-sizing: border-box;
   cursor: pointer;
-  position: absolute;
+  position: relative;
+  vertical-align: center;
   float: right;
   z-index: 99;
   height: 100%;
   width: 100%;
-  top: 40px;
-  right: 25px;
-  height: 60px;
   width: 40px;
 }
 .spinner {
