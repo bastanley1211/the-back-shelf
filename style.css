@@ -100,6 +100,7 @@ footer {
 
 #headerimg {
   width: 85%;
+  float: left;
 }
 
 div#action-nudge-items {
@@ -345,12 +346,16 @@ input[type="checkbox"] {
   box-sizing: border-box;
   cursor: pointer;
   position: relative;
-  vertical-align: center;
   float: right;
   z-index: 99;
   height: 100%;
   width: 100%;
+  height: 60px;
   width: 40px;
+  margin: 0;
+  vertical-align: center;
+  padding: 0;
+  top: 9px;
 }
 .spinner {
   transition: all 0.3s;
