@@ -113,6 +113,10 @@ div#action-nudge-items {
   border-radius: 4px;
   margin: 0 auto;
   min-height: 550px;
+  display: grid;
+  grid
+  justify-content: space-between;
+  align-items: center;
 }
 .banner #bannerheader {
   animation: fadeIn ease 2s;
