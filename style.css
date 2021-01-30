@@ -244,6 +244,7 @@ div#action-nudge-items {
     min-height: 500px;
     margin: 0;
     vertical-align: center;
+    display: block;
   }
   .banner img,
   .banner h2 {
