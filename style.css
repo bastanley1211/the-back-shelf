@@ -1,0 +1,460 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./booksbgedit.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+html,
+body,
+div {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: #843640;
+  cursor: pointer;
+}
+/* =Color
+      -------------------------------------------------------------- */
+
+header {
+  background: #4e2026;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+}
+
+main {
+  background: #dddddd;
+  background-image: url("./booksbgedit.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#newbooks {
+  background-color: rgba(255, 255, 255, 0.99);
+  padding: 20px;
+}
+#store-content {
+  background-color: rgba(221, 221, 221, 0.85);
+}
+iframe {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  padding: 20px 0px;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+
+/* Footer styles on all pages */
+footer {
+  background-color: #4e2026;
+  text-align: center;
+  color: white;
+  font-family: monospace;
+  padding: 30px;
+  box-shadow: 2px 2px 5px #000000;
+  position: relative;
+  bottom: 0;
+}
+/* =Structure
+      -------------------------------------------------------------- */
+
+.wrap {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#store-content {
+  width: 100%;
+  margin: 0px 20px 0px 0px;
+  z-index: -1;
+}
+
+#headerimg {
+  width: 85%;
+}
+
+div#action-nudge-items {
+  display: grid;
+}
+/* .banner only on home page*/
+.banner {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px 0px;
+  width: 100%;
+  border-radius: 4px;
+  margin: 0 auto;
+  min-height: 550px;
+}
+.banner #bannerheader {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease-in-out 3s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.banner h2 {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease-in-out 4s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.banner img {
+  display: block;
+  margin: 0 auto;
+}
+.banner #featured-h1 {
+  padding-top: 100px;
+}
+#down-arrow-anchor {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  z-index: 5;
+  position: relative;
+  top: 125px;
+  animation: fadeIn ease-in 4s;
+  -webkit-animation: fadeIn ease-in 4s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#featured-h1 {
+  padding-top: 100px;
+}
+/* =Media Queries full desktop and large tablets
+      -------------------------------------------------------------- */
+
+@media screen and (min-width: 900px) {
+  #store-content {
+    width: 100%;
+    padding: 10px;
+    margin: 0px 0px;
+  }
+  #headerimg {
+    float: left;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .wrap {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+  .wrap:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .about {
+    min-height: 800px;
+  }
+  .book-stories {
+    min-height: 800px;
+  }
+  #featured-h1 {
+    padding-top: 100px;
+  }
+  .banner {
+    min-height: 850px;
+    margin: 0;
+    vertical-align: center;
+  }
+  .banner img,
+  .banner h2 {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 350px;
+  }
+  #down-arrow-anchor {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    padding: -10px;
+    z-index: 5;
+    position: relative;
+    top: 600px;
+    animation: fadeIn ease-in 4s;
+    -webkit-animation: fadeIn ease-in 4s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+  .banner {
+    min-height: 500px;
+    margin: 0;
+    vertical-align: center;
+  }
+  .banner img,
+  .banner h2 {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 175px;
+  }
+  #down-arrow-anchor {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    padding: -10px;
+    z-index: 5;
+    position: relative;
+    top: 280px;
+    animation: fadeIn ease-in 4s;
+    -webkit-animation: fadeIn ease-in 4s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+/* toggle sidebar menu snippet taken and customized all pages*/
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+header {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: none;
+  height: 100% !important;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#sidebarMenu {
+  height: 100%;
+  position: fixed;
+  right: 0;
+  width: 250px;
+  padding-right: 50px;
+  margin-top: 0px;
+  transform: translateX(250px);
+  transition: transform 250ms ease-in-out;
+  background-color: #4e2026;
+}
+.sidebarMenuInner {
+  margin: 0;
+  padding: 0;
+}
+.sidebarMenuInner li {
+  list-style: none;
+  color: #ddd;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 20px;
+}
+.sidebarMenuInner li span {
+  display: block;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.sidebarMenuInner li a {
+  color: #ddd;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+.sidebarMenuInner a:hover {
+  color: #fff;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+  transform: translateX(0);
+}
+
+input[type="checkbox"] {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  display: none;
+  cursor: pointer;
+}
+.sidebarIconToggle {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  float: right;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  top: 40px;
+  right: 25px;
+  height: 60px;
+  width: 40px;
+}
+.spinner {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #ddd;
+}
+.horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+.diagonal.part-1 {
+  position: relative;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  float: left;
+}
+.diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  margin-top: 8px;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(-135deg);
+  margin-top: -9px;
+}
+/* Contact Page contents style*/
+
+.about {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: rgba(221, 221, 221, 0.85);
+  display: flex;
+  flex-direction: column;
+}
+#about-header {
+  margin: 0 auto;
+  padding: 0px 10px 0px 0px;
+}
+#biopic {
+  width: 100%;
+  max-width: 400px;
+}
+#about-col {
+  padding: 15px 15px;
+  font-size: 22px;
+  width: 100%;
+}
+.sitelinks {
+  padding: 15px 15px;
+  list-style: none;
+  text-align: center;
+}
+.sitelinks a:hover {
+  color: #843640;
+}
+
+/*About page media queries for larger screens*/
+@media screen and (min-width: 900px) {
+  .about {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgba(221, 221, 221, 0.85);
+    display: flex;
+    flex-direction: column;
+  }
+  #about-header {
+    margin: 0 auto;
+    padding: 0px 10px 0px 0px;
+  }
+  section.about-columns {
+    display: grid;
+    grid-column-gap: 10px;
+    gap: 10px;
+  }
+  #biopic {
+    width: 100%;
+    max-width: 400px;
+    grid-column: 1 / 2;
+  }
+  #about-col {
+    padding: 15px 15px;
+    font-size: 22px;
+    width: 100%;
+    grid-column: 2 / 3;
+  }
+}
