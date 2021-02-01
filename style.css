@@ -72,11 +72,16 @@ footer {
   text-align: center;
   color: white;
   font-family: monospace;
-  padding: 30px;
+  padding: 20px;
   box-shadow: 2px 2px 5px #000000;
   position: relative;
   bottom: 0;
 }
+      .coder-name {
+        font-size: 18px;
+        font-family: "Satisfy", cursive;
+        padding: 10px;
+      }
 /* =Structure
       -------------------------------------------------------------- */
 
