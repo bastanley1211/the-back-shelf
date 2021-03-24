@@ -263,7 +263,7 @@ div#action-nudge-items {
     display: block;
     margin: 0 auto;
     padding: -10px;
-    z-index: 5;
+    z-index: 99;
     position: relative;
     top: 280px;
     animation: fadeIn ease-in 4s;
