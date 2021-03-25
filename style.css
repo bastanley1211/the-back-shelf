@@ -44,7 +44,19 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  z-index: 0;
+}
+
+.mobile-menu {
+  background-color: background: #4e2026;
+  color: #fff;
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+}
+.mobile-menu li {
+  display: block;
+  text-align: center;
 }
 
 #newbooks {
@@ -230,7 +242,6 @@ div#action-nudge-items {
     display: block;
     margin: 0 auto;
     padding: -10px;
-    z-index: 9999;
     position: relative;
     top: 600px;
     animation: fadeIn ease-in 4s;
@@ -264,7 +275,6 @@ div#action-nudge-items {
     display: block;
     margin: 0 auto;
     padding: -10px;
-    z-index: 9999;
     position: relative;
     top: 280px;
     animation: fadeIn ease-in 4s;
@@ -308,12 +318,10 @@ header {
   transform: translateX(250px);
   transition: transform 250ms ease-in-out;
   background-color: #4e2026;
-  z-index: 9999;
 }
 .sidebarMenuInner {
   margin: 0;
   padding: 0;
-  z-index: 9999;
 }
 .sidebarMenuInner li {
   list-style: none;
