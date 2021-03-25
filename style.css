@@ -237,6 +237,9 @@ div#action-nudge-items {
     position: relative;
     top: 350px;
   }
+  .mobile-menu {
+    display: none;
+  }
   #down-arrow-anchor {
     width: 100px;
     display: block;
